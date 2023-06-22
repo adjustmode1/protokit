@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/adjustmode1/protokit"
 	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/protoc-gen-go/plugin"
-	"github.com/pseudomuto/protokit"
+	plugin_go "github.com/golang/protobuf/protoc-gen-go/plugin"
 	"google.golang.org/genproto/googleapis/api/annotations"
 
 	"bytes"
