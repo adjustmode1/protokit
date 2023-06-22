@@ -1,4 +1,4 @@
-module github.com/pseudomuto/protokit
+module github.com/adjustmode1/protokit
 
 go 1.17
 
