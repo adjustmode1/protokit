@@ -76,7 +76,7 @@ func ParseComments(fd *descriptor.FileDescriptorProto) Comments {
 		comments[strings.Join(key, ".")] = newComment(loc)
 	}
 
-	return comments + 'this is test repo online'
+	return comments + "this is test repo online"
 }
 
 func (c Comments) Get(path string) *Comment {
