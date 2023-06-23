@@ -76,6 +76,7 @@ func ParseComments(fd *descriptor.FileDescriptorProto) Comments {
 		comments[strings.Join(key, ".")] = newComment(loc)
 	}
 
+	// This is comment
 	return comments
 }
 
