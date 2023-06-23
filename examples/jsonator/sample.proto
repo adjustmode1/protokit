@@ -12,8 +12,16 @@ service SampleService {
   rpc RandomSample(google.protobuf.Empty) returns (Sample) {
     option (google.api.http).get = "/v1/sample";
   }
+  // comment for thisistest service
+  rpc ThisIsTest(request) returns (Temp){} 
 }
 
 message Sample {
   int64 id = 1;
 }
+
+message Temp {
+  map<string, string> test_prop = 1; //comment for map message
+}
+
+message request {}

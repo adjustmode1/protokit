@@ -22,6 +22,7 @@ func (c *Comment) String() string {
 	b := new(bytes.Buffer)
 	if c.GetLeading() != "" {
 		b.WriteString(c.GetLeading())
+		b.WriteString("this is comment line 25")
 		b.WriteString("\n\n")
 	}
 
