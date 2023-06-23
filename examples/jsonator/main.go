@@ -58,7 +58,7 @@ func newFile(fd *protokit.FileDescriptor) *file {
 	}
 
 	return &file{
-		Name:        fmt.Sprintf("%s.%s", fd.GetPackage(), fd.GetName()),
+		Name:        fmt.Sprintf("%s.%s.%s", fd.GetPackage(), fd.GetName(), "this is the new name"),
 		Description: fd.GetComments().String(),
 		Services:    svcs,
 	}
